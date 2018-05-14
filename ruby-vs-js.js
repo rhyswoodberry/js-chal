@@ -1,38 +1,38 @@
-// Challenge #1
-// If statements
+// Challenge #1 //
+// If statements //
 let user = `Tom`;
 if (user === `Tom`) {
   alert("Hello, Tom.");
 } else {
   alert("Someone who is not Tom.")
 }
-// If statements cont.
+// If statements cont. //
 let age = 18
 if (age === 18) {
   alert("Welcome to the casino");
 }
-// If statements cont.
+// If statements cont. //
 let age = prompt("Please enter your age?");
 if (age > 18) {
   alert("Welcome to the casino");
 } else {
   alert("Sorry, you are too young to enter.");
 }
-// Iterate through hash and add user input to array
+// Iterate through hash and add user input to array //
+
+// let students = []
+// students.push(`Sarah`)
+// let username = prompt("Please enter your name:");
+// students.push(username)
+
 let students = []
-students.push(`Sarah`)
-
-let username = prompt("Please enter your name:");
-students.push(username)
-
 for ( let person = 0; person < 3; person++) {
   let username = prompt("Please enter your name:");
   students.push(username);
-  alert(username);
 }
 
-for ( let e = 0; e < 3; e++) {
-  
+for ( e = 0; e < 3; e++) {
+  alert(username);
 }
 
 console.log(students)
