@@ -27,7 +27,13 @@ students.push(username)
 
 for ( let person = 0; person < 3; person++) {
   let username = prompt("Please enter your name:");
-  students.push(username)
+  students.push(username);
+  alert(username);
 }
+
+for ( let e = 0; e < 3; e++) {
+  
+}
+
 console.log(students)
 //
