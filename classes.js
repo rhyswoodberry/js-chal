@@ -13,9 +13,6 @@ class Dog {
     console.log('I walked to' + ' ' + place + ' ' + 'which was' + ' ' + distance + 'kms')  
   }
 
-  total_walks(){
-    
-  }
 }
 
 // Dog.prototype.walk = function(location, distance){
