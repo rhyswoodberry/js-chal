@@ -22,7 +22,6 @@ class Account {
 function randomName() {
   const firstNames = ["Herb", "Merv", "Berg"]
   const lastNames = ["Walker", "Wilson", "Wilkins"]
-
   return randomChoice(firstNames) + " " + randomChoice(lastNames);
 }
 
