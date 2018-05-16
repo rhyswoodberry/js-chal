@@ -23,7 +23,7 @@ function randomName() {
   const firstNames = ["Herb", "Merv", "Berg"]
   const lastNames = ["Walker", "Wilson", "Wilkins"]
 
-  return randomChoice(firsNames) + " " + randomChoice(lastNames);
+  return randomChoice(firstNames) + " " + randomChoice(lastNames);
 }
 
 function randomChoice(array) {
