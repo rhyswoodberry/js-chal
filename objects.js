@@ -9,8 +9,11 @@ console.log(me['currentLocation']);
 me.hobbies = ['Video Games', 'Guitar', 'Politics']
 console.log(me)
 
+for (let key in me) {
+ console.log(key);
+ console.log(me[key]);
+}
+
 delete me.age
 
-//for (let key in me) {
-// console.log(me.key);
-//}
+console.log(me)
