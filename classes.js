@@ -9,14 +9,17 @@ class Dog {
     console.log(`WOOF! My name is ${this.name}`)
   }
 
-  display_walks(place, distance){
+  walk(place, distance){
     console.log('I walked to' + ' ' + place + ' ' + 'which was' + ' ' + distance + 'kms')  
   }
 
+  total_distance(){
+    
+  }
 }
 
 // Dog.prototype.walk = function(location, distance){
 //   console.log('I walked to' + ' ' + location + ' ' + distance + 'kms')
 // }
 
-// let dog = new Dog('Che', 'Cuba')
+let dog = new Dog('Che', 'Cuba')
