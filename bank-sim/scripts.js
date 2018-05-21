@@ -25,13 +25,16 @@ function randomName() {
   return randomChoice(firstNames) + " " + randomChoice(lastNames);
 }
 
+
 function randomChoice(array) {
   return array[Math.floor(Math.random() * array.length)];
 }
 
+
 function randomInt(min, max) {
   return Math.floor(Math.random() * ((max + 1) - min)) + min;
 }
+
 
 // Instances of accounts
 
@@ -46,15 +49,30 @@ for(let i = 0; i < 10; i++) {
   accounts.push(newAccount)
 }
 
+
 function getDetails() {
   const accountNumber = document.getElementById("accNum").value;
 
   for (let i = 0; i < accounts.length; i++) {
     if(accounts[i].acno == accountNumber) {
       document.getElementById('details').innerHTML = `<p> Name: ${accounts[i].name}
-      </p><p> Balance: ${accounts[i].balance}</p>`;
+      </p><p> Balance: $${accounts[i].balance}</p>`;
       return;
     }  
   }
   document.getElementById('details').innerHTML = 'Not a valid account number'       
+}
+
+
+function withdrawal() {
+  const accountNumber = document.getElementById("accNum").value;
+
+  for (let i = 0; i < accounts.length; i++) {
+    if(accounts[i].acno == accountNumber) {
+      accounts[i].withdraw(1000);
+
+      getDetails();
+      return;
+    }  
+  }
 }
