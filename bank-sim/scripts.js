@@ -50,9 +50,11 @@ function getDetails() {
   const accountNumber = document.getElementById("accNum").value;
 
   for (let i = 0; i < accounts.length; i++) {
-    if(accounts[i].number == accountNumber) {
+    if(accounts[i].acno == accountNumber) {
       document.getElementById('details').innerHTML = `<p> Name: ${accounts[i].name}
       </p><p> Balance: ${accounts[i].balance}</p>`;
-    }
+      return;
+    }  
   }
+  document.getElementById('details').innerHTML = 'Not a valid account number'       
 }
