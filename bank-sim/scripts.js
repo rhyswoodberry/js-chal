@@ -39,6 +39,8 @@ const accounts = [];
 
 for(let i = 0; i < 10; i++) {
   // create new account
-  let newAccount = new Account(randomName(),randomInt(10000000, 99999999), randomInt(0, 100000000000));
+  let newAccount = new Account(randomName(),
+  randomInt(10000000, 99999999), 
+  randomInt(0, 100000000000));
   accounts.push(newAccount);
 }
