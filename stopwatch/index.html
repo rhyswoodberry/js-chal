@@ -8,11 +8,38 @@
   src="https://code.jquery.com/jquery-3.3.1.js"
   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
   crossorigin="anonymous"></script>
+  <style>
+  body {
+    padding: 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: palevioletred;
+    background-color: greenyellow;
+    font-size: 3rem;
+    text-align: center;
+    border-style: dotted;
+    border-color:blue;
+    border: 25%;
+  }
+
+  h1 {
+    color: blueviolet;
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  </style>
 </head>
 <body>
-  <button id="start-stop" onClick="startStop()">Start</button>
-  <button id="reset" onClick="reset()">Reset</button>
-  <h2 id="timer">0.00</h2>
-  <script src="script.js"></script>
+  <h1>Good Time</h1>
+    
+  <div class="timer">
+      <button id="start-stop" onClick="startStop()">Start</button>
+      <button id="reset" onClick="reset()">Reset</button>
+      <h2 id="timer">0.00</h2>
+      <script src="script.js"></script>
+  </div>
+  
 </body>
 </html>
