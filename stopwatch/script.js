@@ -33,3 +33,10 @@ function ticker() {
   // put time in html and fix it to 2 decimal places
   $("#timer").html(fullElapsed.toFixed(2));
 }
+
+function reset() {
+  timeLastStarted = null;
+  elapsed = 0;
+  fullElapsed = 0;
+  $("#start-stop").html('Start');
+}
